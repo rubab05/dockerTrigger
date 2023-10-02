@@ -24,4 +24,4 @@ jobs:
           registry: https://index.docker.io/v1/
 
       - name: Build Docker image
-        run: docker buildx build -t rubab05/t3 --push .
+        run: docker buildx build -t rubab05/t3 --push $ {{ github.workspace }}
